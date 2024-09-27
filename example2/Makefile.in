@@ -1,0 +1,2 @@
+example1:
+	gcc -o lookup-pdc-ip main.c @LIBS@
