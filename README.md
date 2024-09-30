@@ -131,7 +131,41 @@ Use CC, CFLAGS etc in Makefile.in
 
 # Example 3
 
+Makefile.am:
+```
+bin_PROGRAMS = pdcip
+pdcip_SOURCES = main.c
+```
 
+configure.ac:
+```
+AC_INIT([example1], [1.0])
+AM_INIT_AUTOMAKE()
+...
+```
+
+Invocation:
+```
+# Done by developer:
+$ autoconf          # configure.ac -> configure
+$ automake          # Makefile.am  -> Makefile.in 
+# Done by "user":
+$./configure        # Makefile.in  -> Makefile
+```
+
+---
+
+# We automatically get compilation targets
+
+| Target         | Description                                                  |
+| ------         | -----------                                                  |
+| make all       | Build programs, libraries, documentation, etc. (= "make")    |
+| make install   | Install what needs to be installed, copying the files from   |
+|                | the package’s tree to system-wide directories.               |
+| make clean     | Erase from the build tree the files built by ‘make all’.     |
+| make distclean | Additionally erase anything ‘./configure’ created.           |
+| make check     | Run the test suite, if any.                                  |
+| make dist      | Recreate ‘PACKAGE-VERSION.tar.gz’ from all the source files. |
 
 ---
 
