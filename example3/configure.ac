@@ -1,4 +1,4 @@
-AC_INIT([example1], [1.0])
+AC_INIT([example3], [1.0])
 AM_INIT_AUTOMAKE()
 
 AC_SEARCH_LIBS([gethostbyname], [nsl])
