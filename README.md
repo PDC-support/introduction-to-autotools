@@ -490,6 +490,8 @@ int main() {
 
 - Enter the subdirectory `exercise3`
 
+- Here, `autoconf.ac` checks that `xmlBufferCreate()` is actually available
+
 - Do `autoreconf -ivf` and try to:
   `./configure --with-libxml2`
   
