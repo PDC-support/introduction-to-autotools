@@ -2,4 +2,4 @@ CC = @CC@
 CFLAGS = @CFLAGS@
 
 example2:
-	$(CC) $(CFLAGS) -o lookup-pdc-ip main.c @LIBS@
+	$(CC) $(CFLAGS) -o pdcip main.c @LIBS@
