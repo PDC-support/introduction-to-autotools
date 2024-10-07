@@ -1,0 +1,5 @@
+This is a program which looks up the ip address of www.pdc.kth.se.
+
+To run do:
+
+$ pdcip
