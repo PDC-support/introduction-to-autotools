@@ -23,6 +23,14 @@ PDC
 
 ---
 
+# Documentation
+
+- `autoconf`: `https://www.gnu.org/software/autoconf/`
+
+- `automake`: `https://www.gnu.org/software/automake/`
+
+---
+
 # Overview
 
 - autoconf
@@ -444,14 +452,6 @@ int main() {
   - An error occurs when running the `configure` script
   
     - Action: Search for the location of the error in `config.log`
-
----
-
-# More material
-
-- `autoconf`: `https://www.gnu.org/software/autoconf/`
-
-- `automake`: `https://www.gnu.org/software/automake/`
 
 ---
 
