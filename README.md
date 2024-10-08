@@ -412,6 +412,21 @@ fi
 
 # Example 4
 
+- In addition, we have added a line `AC_PROG_CC` towards the top of
+  `configure.ac`. This makes sure that tests for the compiler is done
+  unconditionally and not automatically inside if/then/else:
+  ```
+  AC_INIT([example4], [1.0])
+  AM_INIT_AUTOMAKE()
+  AC_CONFIG_HEADERS([config.h])
+
+  AC_PROG_CC
+  ```
+
+---
+
+# Example 4
+
 Excerpt from main.c:
 ```
 int main() {

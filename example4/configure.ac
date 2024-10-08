@@ -2,6 +2,8 @@ AC_INIT([example4], [1.0])
 AM_INIT_AUTOMAKE()
 AC_CONFIG_HEADERS([config.h])
 
+AC_PROG_CC
+
 AC_ARG_WITH([libxml2],
     [AS_HELP_STRING([--with-libxml2], [Use libxml2 to generate output])],
     [with_libxml2=$withval], [with_libxml2=no])
